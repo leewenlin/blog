@@ -5,8 +5,7 @@ locale: zh_CN
 description: "acg,handmade,coding"
 logo: site-logo.png
 search: true
-url: http://localhost:4000/blog
-baseurl: /blog
+url: /blog
 # Jekyll configuration
 
 permalink:   /:categories/:title/
