@@ -6,6 +6,8 @@ description: "acg,handmade,coding"
 logo: site-logo.png
 search: true
 url: /blog
+baseurl: /blog
+
 # Jekyll configuration
 
 permalink:   /:categories/:title/
