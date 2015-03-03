@@ -1,1 +1,53 @@
+# Site wide configuration
+
+title: Panda's Blog
+locale: zh_CN
+description: "acg,handmade,coding"
+logo: site-logo.png
+search: true
+url: http://localhost:4000/blog
 baseurl: /blog
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: 李文琳
+  avatar: bio-photo.jpg
+  email: 412443296@qq.com
+  disqus-shortname:
+  twitter: #username
+  facebook: leewenlin.panda
+  github: leewenlin
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: leewenlin
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  weibo: 1743643777
+  google:
+    plus: #username
+    analytics: UA-60227111-1
+    verify:
+    ad-client:
+    ad-slot: 
+  bing-verify:
