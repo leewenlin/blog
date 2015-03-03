@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Blog
-excerpt: "An archive of blog posts sorted by date."
+title: 日志
+excerpt: 
 search_omit: true
 ---
 
