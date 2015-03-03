@@ -2,15 +2,15 @@
 layout: post
 title: 翻译XSD文件小脚本
 modified:
-categories: blog
+categories: python
 excerpt:
-tags: []
+tags: [python, xsd]
 image:
   feature:
-date: 2014-10-25T15:39:55-23:00
+date: 2014-10-25T15:39:55
 ---
 
-以前工作需要写的一个翻译xsd文件的小脚本，第一次写python，其实挺简单的，就是正则加上调google的翻译，后来怕google翻译不全面，又给加上了一个调有道的。
+工作需要写的一个翻译xsd文件的小脚本，第一次写python，其实挺简单的，就是正则加上调google的翻译，后来怕google翻译不全面，又给加上了一个调有道的。
 
 {% highlight python %}
 import httplib,os,re,json,urllib,urllib2

@@ -3,7 +3,7 @@
 title: Panda的博客
 locale: zh_CN
 description: 专业打怪兽，业余写代码。为了世界和平而战_(·ω·√∠)_
-logo: site-logo.png
+logo: panda.png
 search: true
 url: /blog
 baseurl: /blog
