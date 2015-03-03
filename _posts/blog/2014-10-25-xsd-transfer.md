@@ -3,7 +3,7 @@ layout: post
 title: 翻译XSD文件小脚本
 modified:
 categories: python
-excerpt:翻译XSD文件小脚本
+excerpt: 翻译XSD文件小脚本
 tags: [python, xsd]
 image:
   feature:
