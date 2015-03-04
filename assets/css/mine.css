@@ -1,0 +1,10 @@
+.navigation-wrapper a:before{
+	font-size: 2rem;
+	content: "❀";
+	vertical-align: middle;
+	height: 0.875rem;
+	line-height: 0.875rem;
+}
+body,h1,h2,h3,h4,h5,h6{
+	font-family: "Microsoft YaHei",arial !important;
+}
