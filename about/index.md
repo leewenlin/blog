@@ -1,12 +1,10 @@
 ---
 layout: page
 title: 关于我
-excerpt: 哈哈哈哈
-modified: 2014-08-08T19:44:38.564948-04:00
+excerpt: 
+modified: 2014-03-06T10:30:38
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: zongshi.jpg
 ---
 
 Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the follow up to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).

@@ -10,7 +10,7 @@ baseurl: /blog
 
 # Jekyll configuration
 
-permalink:   /:categories/:title/
+permalink:   /:categories/:title.html
 markdown:    kramdown
 highlighter: pygments
 sass:
@@ -35,7 +35,7 @@ owner:
   name: leewenlin
   avatar: panda.png
   email: 412443296@qq.com
-  disqus-shortname:
+  disqus-shortname: "leewenlin"
   twitter: #username
   facebook: leewenlin.panda
   github: leewenlin
