@@ -32,8 +32,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: 李文琳
-  avatar: bio-photo.jpg
+  name: leewenlin
+  avatar: panda.png
   email: 412443296@qq.com
   disqus-shortname:
   twitter: #username
