@@ -35,7 +35,8 @@ owner:
   name: leewenlin
   avatar: panda.png
   email: 412443296@qq.com
-  disqus-shortname: "leewenlin"
+  disqus-shortname: #"leewenlin"
+  duoshuo: leewenlin
   twitter: #username
   facebook: leewenlin.panda
   github: leewenlin
