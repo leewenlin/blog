@@ -11,10 +11,10 @@ body,h1,h2,h3,h4,h5,h6{
 
 a:hover{
 	color: #ffb6ce;
--webkit-animation-name: swing;
-  animation-name: swing;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s
+	-webkit-animation-name: swing;
+  	animation-name: swing;
+  	-webkit-animation-duration: 1s;
+ 	animation-duration: 1s;
 }
 a:hover span{
 	color: #ddd;
