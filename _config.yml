@@ -5,7 +5,8 @@ locale: zh_CN
 description: 专业打怪兽，业余写代码。为了世界和平而战_(·ω·√∠)_
 logo: panda.png
 search: true
-url: /blog
+url: http://leewenlin.com/blog
+#url: http://localhost:4000/blog
 baseurl: /blog
 
 # Jekyll configuration
