@@ -1,12 +1,14 @@
 ---
 layout: page
 title: 最近更新
-excerpt: 
+excerpt: 李文琳的个人博客
 search_omit: true
 ---
 
 <ul class="post-list">
 {% for post in site.posts limit:10 %} 
+{% if post.categories.first != "articles" %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt }}</span>{% endif %}</a></article></li>
+ {% endif %}
 {% endfor %}
 </ul>
