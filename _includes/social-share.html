@@ -8,3 +8,15 @@
   <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
 </span>
 <!-- /.social-share -->
+
+
+<span class="social-share-weibo">
+	<div class="ds-share" style="display:inline" data-thread-key="{{page.title}}" data-title="{{page.title}}" data-images="{{ site.url }}/images/{{ author.avatar }}" data-content= {% if page.excerpt %}"{{page.excerpt}}…"{% endif %} data-url="{{ site.url }}{{ page.url }}" >
+	<a  href="javascript:void(0);" data-service="weibo"><i class="fa fa-weibo"></i>微博</a>
+</div>
+</span>
+<span class="social-share-wechat">
+	<div class="ds-share" style="display:inline" data-thread-key="{{page.title}}" data-title="{{page.title}}" data-images="{{ site.url }}/images/{{ author.avatar }}" data-content= {% if page.excerpt %}"{{page.excerpt}}…"{% endif %} data-url="{{ site.url }}{{ page.url }}" >
+	<a  href="javascript:void(0);" data-service="wechat"><i class="fa fa-weixin"></i>微信</a>
+	 </div>
+</span>
