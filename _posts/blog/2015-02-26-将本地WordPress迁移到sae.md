@@ -10,7 +10,7 @@ share: true
 ---
 
 1. 用phpmyadmin导出本地的数据库,导入到sae的mysql中。并修改wp-config.php
-   ```php
+   {% highlight php %}
 define('DB_NAME', SAE_MYSQL_DB);
 define('DB_USER', SAE_MYSQL_USER);
 define('DB_PASSWORD', SAE_MYSQL_PASS);
@@ -39,25 +39,25 @@ array(
 ),
 );
 $global_db_list = $db_list['write'];
-   ```
+   {% endhighlight %}
 
 2. 将wp的uploads目录替换为sae的Storage
    * 在storage中新建domain
    * 项目根目录新建sae.php文件
-   ```php
+   {% highlight php %}
 /* 在SAE的Storage中新建的Domain名*/
 define('SAE_STORAGE','Domain');
 /* 设置文件上传的路径和文件路径的URL，不要更改 */
 define('SAE_DIR', 'saestor://'.SAE_STORAGE.'/uploads');
 define('SAE_URL', 'http://'.$_SERVER['HTTP_APPNAME'].'-'.SAE_STORAGE.'.stor.sinaapp.com/uploads');
-   ```
+   {% endhighlight %}
    * 修改functions.php文件
      首行插入
-     ```php
+     {% highlight php %}
 include( ABSPATH . '/sae.php' );
-     ```
+     {% endhighlight %}
      wp_mkdir_p( $target ) 中修改如下
-     ```php
+     {% highlight php %}
 function wp_mkdir_p( $target ) {
 //注释
 //  $wrapper = null;
@@ -77,24 +77,24 @@ function wp_mkdir_p( $target ) {
 //新增
         return true;
     $target = str_replace( '//', '/', $target );
-     ```
-     ```$basedir = $dir;```的上面添加
-     ```php
+     {% endhighlight %}
+     {% endhighlight %}$basedir = $dir;{% endhighlight %}的上面添加
+     {% highlight php %}
 $dir = SAE_DIR;$url = SAE_URL;
-     ```
-     ```/** * Send a HTTP header to limit rendering of pages to same origin iframes.```的上面添加
-     ```php
+     {% endhighlight %}
+     {% endhighlight %}/** * Send a HTTP header to limit rendering of pages to same origin iframes.{% endhighlight %}的上面添加
+     {% highlight php %}
 if ( !function_exists('utf8_encode') ) {
 function utf8_encode($str) {
 $encoding_in = mb_detect_encoding($str);
 return mb_convert_encoding($str, 'UTF-8', $encoding_in);
 }
 }
-     ```
+     {% endhighlight %}
    * 修改wp-admin/includes/file.php，注释掉如下代码
-    ```php
+    {% highlight php %}
 // Set correct file permissions
 //$stat = stat( dirname( $new_file ));
 //$perms = $stat['mode'] & 0000666;
 //@ chmod( $new_file, $perms );
-    ```
+    {% endhighlight %}
