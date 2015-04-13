@@ -78,11 +78,11 @@ function wp_mkdir_p( $target ) {
         return true;
     $target = str_replace( '//', '/', $target );
      {% endhighlight %}
-     {% endhighlight %}$basedir = $dir;{% endhighlight %}的上面添加
+     ```$basedir = $dir;```的上面添加
      {% highlight php %}
 $dir = SAE_DIR;$url = SAE_URL;
      {% endhighlight %}
-     {% endhighlight %}/** * Send a HTTP header to limit rendering of pages to same origin iframes.{% endhighlight %}的上面添加
+     ```/** * Send a HTTP header to limit rendering of pages to same origin iframes.```的上面添加
      {% highlight php %}
 if ( !function_exists('utf8_encode') ) {
 function utf8_encode($str) {
