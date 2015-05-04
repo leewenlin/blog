@@ -3,11 +3,11 @@
 - title: 关于我
   url: /about/
 
-- title: 主页
-  url: /
+- title: 回到主页
+  url: /..
 
 - title: 日志
-  url: /blog/
+  url: /
 
 - title: 简历
   url: /resume/
