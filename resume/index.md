@@ -57,7 +57,7 @@ search_omit: true
 
 #专业技能		
 - 熟悉spring mvc、SSH等主流开发框架，能熟练进行Java Web应用开发。
-- 能熟练使用HTML5、CSS3、JavaScript、JQuery、ajax、json、jsonp、jstl、art-template进行开发。
+- 能熟练使用HTML、CSS、JavaScript、JQuery、ajax、json、jsonp、jstl、art-template进行开发。
 - 熟悉SQL语句，对Oracle数据库有基本了解。
 - 熟悉常用的Linux基础操作指令。
 - 能熟练使用Photoshop进行切图和简单的制图改图。
