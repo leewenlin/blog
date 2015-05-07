@@ -37,7 +37,7 @@ search_omit: true
   - IP定位功能，并使用了二分查找提高速度；
   - 高端选餐，优惠票，订单管理，订单支付等等。
 	
-###厦门航空电商统一订单平台（2014.9 - 至今）
+###厦门航空电商统一订单平台（2014.09 - 至今）
 **项目职责**：接口设计+数据库设计+软件开发
 
 **项目框架**：mina , spring mvc , hibernate
@@ -78,4 +78,4 @@ DIY手工，游戏/动画/漫画，美食。
 - 热爱互联网，有激情，不拘泥于固定思维模式，接受和学习新事物的能力强。
 
 
-  [1]: http://leewenlin.com/blog/%E7%BF%BB%E8%AF%91XSD%E6%96%87%E4%BB%B6%E5%B0%8F%E8%84%9A%E6%9C%AC.html
+  [1]: http://leewenlin.com/blog/翻译XSD文件的Python小脚本.html

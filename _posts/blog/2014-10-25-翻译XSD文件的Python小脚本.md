@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 翻译XSD文件小脚本
+title: 翻译XSD文件的Python小脚本
 modified:
 categories: 
 excerpt: 
