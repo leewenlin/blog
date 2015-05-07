@@ -1,10 +1,10 @@
 # Site navigation links
 
-- title: 关于我
-  url: /about/
+#- title: 关于我
+#  url: /about/
 
 - title: 回到主页
-  url: /..
+  url: http://leewenlin.com
 
 - title: 日志
   url: /
