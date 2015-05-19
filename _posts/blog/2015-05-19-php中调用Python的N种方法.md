@@ -8,8 +8,8 @@ tags: [php,python]
 comments: true
 share: true
 ---
-
-- {% highlight php %}
+- 
+{% highlight php %}
 $ret = popen("python hehe.py","r"); 
 $read=''; 
 while(!feof($ret)){ 
@@ -18,15 +18,15 @@ $read .= fread($ret, 512);
 echo $read;
 {% endhighlight %}
 
-- {% highlight php %}
+{% highlight php %}
 system("python hehe.py");
 {% endhighlight %}
 
-- {% highlight php %}
+{% highlight php %}
 echo `python hehe.py`;
 {% endhighlight %}
 
-- {% highlight php %}
+{% highlight php %}
 echo exec("python hehe.py");
 {% endhighlight %}
 
