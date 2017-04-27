@@ -9,8 +9,8 @@
 - title: 日志
   url: /
 
-- title: 简历
-  url: /resume/
+# - title: 简历
+#   url: /resume/
 
 - title: 检索
   url: /search/
