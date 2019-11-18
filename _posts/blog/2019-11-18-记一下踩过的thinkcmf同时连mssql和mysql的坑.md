@@ -262,7 +262,7 @@ thinkcmf配置多个数据库其实相当方便。
 
 如果是不同的app用不同库的话，直接在\app\xxxx\config\database.php里配置就好了。
 
-```
+```php
 <?php
 /**
  * 配置文件
