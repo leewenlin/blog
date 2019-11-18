@@ -18,14 +18,16 @@ share: true
 1. 安装ODBC Driver，[下载链接](https://www.microsoft.com/zh-CN/download/details.aspx?id=36434)
 2. 下载Microsoft Drivers for PHP for SQL Server，[下载链接](https://www.microsoft.com/en-us/download/details.aspx?id=20098)，找到对应版本的扩展放到ext文件夹中（我用到的是：php_sqlsrv_71_ts_x64.dll和php_pdo_sqlsrv_71_ts_x64.dll）
 3. 并且在php.ini中加入这两个扩展，如果跟我一样用的是wamp，实际上需要修改的文件是phpForApache.ini
-```
+```php
 extension=php_pdo_sqlsrv_71_ts_x64.dll
 extension=php_sqlsrv_71_ts_x64.dll
 ```
 
 ### 修改驱动
 Chinese_PRC_BIN排序会区分大小写，而thinkphp的数据库连接驱动获取表结构的时候用的是小写，如果不修改驱动，连接的时候会报错“对象名 'information_schema.tables' 无效”。
+
 修改的文件为\vendor\thinkphp\library\think\db\connector\Sqlsrv.php，方法就是把information_schema、tables、columns等等相关字段全部改成大写，偷懒的话可以直接用下面我改的。
+
 ```php
 <?php
 
@@ -257,8 +259,11 @@ class Sqlsrv extends Connection
 
 ### 配置多个数据库
 thinkcmf配置多个数据库其实相当方便。
+
 如果是不同的app用不同库的话，直接在\app\xxxx\config\database.php里配置就好了。
+
 如果是不同的app用不同库,但是权限管理想用公共的，可以在database.php里加个db_con2，然后app的basemodel里加上```protected $connection = 'db_con2';```就行
+
 还有个需要注意的问题就是表名了，mssql的表名通常是大写，按照thinkphp默认的处理，会自动加下划线断开并转小写，例如PANDA会变成p_a_n_d_a，所以模型里面需要加上表名```protected $table = 'dbo.XXXXX';```
 
 ### 貌似就这么多需要注意的地方了，这应该是目前为止网上最全面的一篇了
