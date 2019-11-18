@@ -262,6 +262,34 @@ thinkcmf配置多个数据库其实相当方便。
 
 如果是不同的app用不同库的话，直接在\app\xxxx\config\database.php里配置就好了。
 
+```
+<?php
+/**
+ * 配置文件
+ */
+
+return [
+    // 数据库类型
+    'type'     => 'sqlsrv',
+    // 服务器地址
+    'hostname' => '127.0.0.1',
+    // 数据库名
+    'database' => 'XXX',
+    // 用户名
+    'username' => 'sa',
+    // 密码
+    'password' => '',
+    // 端口
+    'hostport' => '1433',
+    // 数据库编码默认采用utf8
+    'charset'  => 'gbk',
+    // 数据库表前缀
+    'prefix'   => 'dbo.',
+    "authcode" => '',
+    //#COOKIE_PREFIX#
+];
+```
+
 如果是不同的app用不同库,但是权限管理想用公共的，可以在database.php里加个db_con2，然后app的basemodel里加上```protected $connection = 'db_con2';```就行
 
 还有个需要注意的问题就是表名了，mssql的表名通常是大写，按照thinkphp默认的处理，会自动加下划线断开并转小写，例如PANDA会变成p_a_n_d_a，所以模型里面需要加上表名```protected $table = 'dbo.XXXXX';```
