@@ -18,8 +18,9 @@ share: true
 1. 安装ODBC Driver，[下载链接](https://www.microsoft.com/zh-CN/download/details.aspx?id=36434)
 2. 下载Microsoft Drivers for PHP for SQL Server，[下载链接](https://www.microsoft.com/en-us/download/details.aspx?id=20098)，找到对应版本的扩展放到ext文件夹中（我用到的是：php_sqlsrv_71_ts_x64.dll和php_pdo_sqlsrv_71_ts_x64.dll）
 3. 并且在php.ini中加入这两个扩展，如果跟我一样用的是wamp，实际上需要修改的文件是phpForApache.ini
-```php
+```
 extension=php_pdo_sqlsrv_71_ts_x64.dll
+
 extension=php_sqlsrv_71_ts_x64.dll
 ```
 
